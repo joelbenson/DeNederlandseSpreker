@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://joelbenson.github.io/DeNederlandseSpreker/sitemap.xml
