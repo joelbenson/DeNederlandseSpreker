@@ -1,0 +1,33 @@
+title: De Nederlandse Spreker
+email: j.c.benson@student.rug.nl
+description: Mijn reizen in Groningen
+twitter_username: hetjoelster
+github_username: joelbenson
+
+sass:
+    sass_dir: _sass
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "base"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
