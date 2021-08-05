@@ -4,8 +4,7 @@ description: Mijn reizen in Groningen
 twitter_username: hetjoelster
 github_username: joelbenson
 
-domain: joelbenson.github.io
-baseurl: /DeNederlandseSpreker/root/_site
+domain: denederlandsespreker.github.io
 
 sass:
     sass_dir: _sass
