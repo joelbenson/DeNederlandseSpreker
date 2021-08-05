@@ -1,7 +1,0 @@
-<nav class="sticky-top bg-light">
-  {% for item in site.data.navigation %}
-    <a class="nav-item text-center p-1 {% if page.url == item.link %}nav-current{% endif %}" href="{{ item.link }}">
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
