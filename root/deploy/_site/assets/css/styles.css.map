@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss",
+		"_sass/index.scss",
+		"_sass/post.scss",
+		"_sass/includes.scss",
+		"_sass/archive.scss",
+		"_sass/about.scss",
+		"_sass/author.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n@import \"index\";\n@import \"post\";\n@import \"includes\";\n@import \"archive\";\n@import \"about\";\n@import \"author\";\n",
+		"@font-face {\n  font-family: 'Chomsky';\n  src: url(\"/assets/fonts/chomsky-font/font.otf\");\n}\n\n@font-face {\n  font-family: 'Old Newspaper';\n  src: url(\"/assets/fonts/old-newspaper-font/font.ttf\");\n}\n\n@font-face {\n  font-family: 'Headline';\n  src: url(\"/assets/fonts/title-wave-font/font.ttf\");\n}\n\n.alles {\n\n}\n.logo {\n  background-color: #b33d18;\n  background-color: #0a0a0a;\n}\n.content {\n  filter: grayscale(100%);\n}\n\n.site-title, .site-title > a, .site-title > a:hover {\n  font-family: 'Chomsky', serif;\n  color: white;\n  text-decoration: none;\n  font-size: 7vw;\n}\n\np {\n  font-family: 'Old Newspaper';\n}\n",
+		".headline {\n  font-family: 'Headline';\n  text-transform: capitalize;\n  font-size: 8vw;\n  text-align: center;\n}\n.headline > a, .article-title > a {\n  color: #292b2c;\n}\n.headline > a:hover, .article-title > a:hover {\n  color: orange;\n}\n\n.headline-content {\n  column-count: 2;\n  height: 500px;\n}\n.headline-content::first-letter {\n  line-height: 75%;\n  font-size: 35px;\n}\n\n.article-title {\n  font-family: 'Headline';\n  text-transform: capitalize;\n  font-size: 34px;\n}\n.article-title.large {\n  font-size: 68px;\n}\n",
+		".post-content {\n  font-family: 'Old Newspaper';\n}\n\n.cover-author-date > a {\n  text-decoration: underline;\n  color: black;\n} .cover-author-date > a:hover {\n  color: orange;\n}\n\n.article-content::first-letter {\n  font-size: 70px;\n  line-height: 75%;\n}\n.article-content {\n  font-size: 18px;\n}\n",
+		".nav-item {\n  color: black;\n  min-width: 50px;\n}\n.nav-item:hover {\n  color: white;\n  background: black;\n  text-decoration: none;\n}\n\n.nav-current {\n  background: black;\n  color: orange;\n}\n",
+		".archive {\n  list-style: none;\n}\n\n.archive > li > .article-title {\n  font-size: 18px;\n  text-decoration: underline;\n}\n",
+		".about-text {\n  column-count: 3;\n}\n.about-text::first-letter{\n  font-size: 54px;\n  line-height: 75%;\n}\n",
+		".author-name {\n  font-family: 'Old Newspaper';\n  font-size: 28px;\n}\n.author-name > a {\n  color: black;\n}\n.author-name > a:hover {\n  color: orange;\n}\n\n.author-position {\n  font-size: 14px;\n  font-style: italic;\n  font-weight: bold;\n}\n"
+	],
+	"names": [],
+	"mappings": "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"
+}

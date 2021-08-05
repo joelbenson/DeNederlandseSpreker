@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+<div class="row m-0 p-3">
+
+  <div class="col-2">
+    <img class="img-fluid" src="{{ page.image | prepend: site.baseurl }}">
+  </div>
+  <div class="col-2">
+    <h2 class="author-name"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.name }}</a></h2>
+    <h3 class="author-position">{{ page.position }}</h3>
+    {{ content }}
+  </div>
+
+  <div class="col-8">
+
+    <ul class="archive mx-auto w-75 py-4">
+      {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+      {% for post in filtered_posts %}
+        <li>
+          {% assign author = site.authors | where: 'short_name', post.author | first %}
+          <h2 class="article-title" style="font-family: serif; font-size: 22px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8212; {{ post.title }}</a></h2>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</div>

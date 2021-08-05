@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+
+
+<div class="row m-0 p-0">
+  <div class="col cover m-0 p-0">
+
+    <div class="cover-info w-100 p-3">
+      <h2 class="article-title cover-title text-center" style="font-size: 8vw;">{{ page.title }}</h2>
+
+      <p class="cover-author-date text-center p-1">
+        {{ page.date | date_to_string }}
+        {% assign author = site.authors | where: 'short_name', page.author | first %}
+        {% if author %}
+          &#8212; <a href="{{ author.url }}">{{ author.name }}</a>
+        {% endif %}
+      </p>
+    </div>
+
+    <img class="img-fluid" src="{{ page.image | prepend: site.baseurl }}">
+
+  </div>
+</div>
+
+<div class="row w-100 p-5">
+
+  <div class="col-lg-8">
+    <div class="article-content mx-auto w-75">
+      {{ content }}
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,14 @@
+.nav-item {
+  color: black;
+  min-width: 50px;
+}
+.nav-item:hover {
+  color: white;
+  background: black;
+  text-decoration: none;
+}
+
+.nav-current {
+  background: black;
+  color: orange;
+}

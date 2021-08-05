@@ -1,0 +1,13 @@
+---
+title: Archief
+---
+
+<ul class="archive w-50 mx-auto py-4">
+  {% for post in site.posts %}
+    <li>
+      {% assign author = site.authors | where: 'short_name', post.author | first %}
+      <h2 class="article-title" style="font-family: serif; font-size: 22px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8212; {{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

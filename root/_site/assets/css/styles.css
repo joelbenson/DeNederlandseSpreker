@@ -1,0 +1,61 @@
+@font-face { font-family: 'Chomsky'; src: url("/assets/fonts/chomsky-font/font.otf"); }
+
+@font-face { font-family: 'Old Newspaper'; src: url("/assets/fonts/old-newspaper-font/font.ttf"); }
+
+@font-face { font-family: 'Headline'; src: url("/assets/fonts/title-wave-font/font.ttf"); }
+
+.logo { background-color: #b33d18; background-color: #0a0a0a; }
+
+.content { filter: grayscale(100%); }
+
+.site-title, .site-title > a, .site-title > a:hover { font-family: 'Chomsky', serif; color: white; text-decoration: none; font-size: 7vw; }
+
+p { font-family: 'Old Newspaper'; }
+
+.headline { font-family: 'Headline'; text-transform: capitalize; font-size: 8vw; text-align: center; }
+
+.headline > a, .article-title > a { color: #292b2c; }
+
+.headline > a:hover, .article-title > a:hover { color: orange; }
+
+.headline-content { column-count: 2; height: 500px; }
+
+.headline-content::first-letter { line-height: 75%; font-size: 35px; }
+
+.article-title { font-family: 'Headline'; text-transform: capitalize; font-size: 34px; }
+
+.article-title.large { font-size: 68px; }
+
+.post-content { font-family: 'Old Newspaper'; }
+
+.cover-author-date > a { text-decoration: underline; color: black; }
+
+.cover-author-date > a:hover { color: orange; }
+
+.article-content::first-letter { font-size: 70px; line-height: 75%; }
+
+.article-content { font-size: 18px; }
+
+.nav-item { color: black; min-width: 50px; }
+
+.nav-item:hover { color: white; background: black; text-decoration: none; }
+
+.nav-current { background: black; color: orange; }
+
+.archive { list-style: none; }
+
+.archive > li > .article-title { font-size: 18px; text-decoration: underline; }
+
+.about-text { column-count: 3; }
+
+.about-text::first-letter { font-size: 54px; line-height: 75%; }
+
+.author-name { font-family: 'Old Newspaper'; font-size: 28px; }
+
+.author-name > a { color: black; }
+
+.author-name > a:hover { color: orange; }
+
+.author-position { font-size: 14px; font-style: italic; font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */

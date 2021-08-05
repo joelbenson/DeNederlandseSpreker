@@ -1,0 +1,7 @@
+.about-text {
+  column-count: 3;
+}
+.about-text::first-letter{
+  font-size: 54px;
+  line-height: 75%;
+}

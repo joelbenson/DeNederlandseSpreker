@@ -1,0 +1,30 @@
+.headline {
+  font-family: 'Headline';
+  text-transform: capitalize;
+  font-size: 8vw;
+  text-align: center;
+}
+.headline > a, .article-title > a {
+  color: #292b2c;
+}
+.headline > a:hover, .article-title > a:hover {
+  color: orange;
+}
+
+.headline-content {
+  column-count: 2;
+  height: 500px;
+}
+.headline-content::first-letter {
+  line-height: 75%;
+  font-size: 35px;
+}
+
+.article-title {
+  font-family: 'Headline';
+  text-transform: capitalize;
+  font-size: 34px;
+}
+.article-title.large {
+  font-size: 68px;
+}

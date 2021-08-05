@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Chomsky';
+  src: url("/assets/fonts/chomsky-font/font.otf");
+}
+
+@font-face {
+  font-family: 'Old Newspaper';
+  src: url("/assets/fonts/old-newspaper-font/font.ttf");
+}
+
+@font-face {
+  font-family: 'Headline';
+  src: url("/assets/fonts/title-wave-font/font.ttf");
+}
+
+.alles {
+
+}
+.logo {
+  background-color: #b33d18;
+  background-color: #0a0a0a;
+}
+.content {
+  filter: grayscale(100%);
+}
+
+.site-title, .site-title > a, .site-title > a:hover {
+  font-family: 'Chomsky', serif;
+  color: white;
+  text-decoration: none;
+  font-size: 7vw;
+}
+
+p {
+  font-family: 'Old Newspaper';
+}
