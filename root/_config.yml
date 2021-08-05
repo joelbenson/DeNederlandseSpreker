@@ -4,6 +4,9 @@ description: Mijn reizen in Groningen
 twitter_username: hetjoelster
 github_username: joelbenson
 
+sass:
+    sass_dir: _sass
+
 collections:
   authors:
     output: true
